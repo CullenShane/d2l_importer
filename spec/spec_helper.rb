@@ -1,4 +1,5 @@
 require "bundler/setup"
+Bundler.setup
 require "d2l_importer"
 
 RSpec.configure do |config|
