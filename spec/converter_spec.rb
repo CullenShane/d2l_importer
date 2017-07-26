@@ -5,17 +5,26 @@ describe D2lImporter::Converter do
     expect(D2lImporter::Converter).to be < Canvas::Migration::Migrator
   end
 
-  it 'should initalize' do
+  before do
     Rails.application =
         Class.new do
-                 def self.config
-                   Class.new do
-                     def self.root
-                       Pathname.new(File.path(__dir__))
-                     end
-                   end
-                 end
-    end
-    expect{D2lImporter::Converter.new({archive_file: File.new('/dev/null')}) }.not_to raise_error
+          def self.config
+            Class.new do
+              def self.root
+                Pathname.new(File.path(__dir__))
+              end
+            end
+          end
+        end
+  end
+
+  it 'should initalize' do
+    settings = {archive_file: File.new('/dev/null')}
+    expect{ D2lImporter::Converter.new(settings) }.not_to raise_error
+  end
+
+  it 'should require super' do
+    settings = {}
+    expect{ D2lImporter::Converter.new(settings) }.to raise_error RuntimeError
   end
 end
