@@ -4,18 +4,18 @@ define [
   'compiled/views/content_migrations/subviews/ChooseMigrationFileView'
   'compiled/views/content_migrations/subviews/SelectContentCheckboxView'
   'compiled/views/content_migrations/subviews/QuestionBankView'
-  'compiled/views/content_migrations/MoodleZipView'
+  'compiled/plugins/d2l_importer/views/content_migrations/D2lZipView'
 ], ($,
   ConverterViewControl,
   ChooseMigrationFileView,
   SelectContentCheckboxView,
   QuestionBankView,
-  MoodleZipView) ->
+  D2lZipView) ->
 
 
   ConverterViewControl.register
     key: 'd2l_converter'
-    view: new MoodleZipView
+    view: new D2lZipView
       chooseMigrationFile: new ChooseMigrationFileView
         model: ConverterViewControl.getModel()
         fileSizeLimit: ENV.UPLOAD_LIMIT
