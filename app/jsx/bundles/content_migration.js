@@ -1,1 +1,1 @@
-import 'compiled/bundles/modules/content_migration_setup'
+import 'compiled/plugins/d2l_importer/bundles/modules/content_migration_setup'
