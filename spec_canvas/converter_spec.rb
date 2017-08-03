@@ -1,6 +1,11 @@
-require 'spec_helper'
+require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe D2lImporter::Converter do
+  it 'should exist' do
+    expect(D2lImporter::Converter).not_to be_nil
+    expect(D2lImporter::Converter).to be < Canvas::Migration::Migrator
+  end
+
   it "is a Canvas LMS class" do
     expect(D2lImporter::Converter).to be < Canvas::Migration::Migrator
   end
@@ -29,7 +34,7 @@ describe D2lImporter::Converter do
   end
 
   context "#export" do
-    let(:archive_file) { File.new('/dev/null') }
+    let(:archive_file) { File.new(File.expand_path(File.dirname(__FILE__))+ '/fixtures/D2LExport.zip') }
     subject { D2lImporter::Converter.new({archive_file: archive_file}) }
     it "should export a course hash" do
       expect{subject.export}.not_to raise_error

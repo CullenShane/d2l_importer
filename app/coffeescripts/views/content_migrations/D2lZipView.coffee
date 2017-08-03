@@ -6,4 +6,4 @@ define [
   class D2lZip extends MigrationView
     template: template
 
-    @child 'chooseMigrationView','.chooseMigrationView'
+    @child 'chooseMigrationFile','.chooseMigrationFile'
