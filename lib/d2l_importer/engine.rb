@@ -1,5 +1,5 @@
 module D2lImporter
-  class Railtie < ::Rails::Engine
+  class Railtie < Rails::Engine
     isolate_namespace D2lImporter
     initializer "d2l_importer.canvas_plugin" do
       require 'd2l_importer/converter'

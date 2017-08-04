@@ -39,6 +39,8 @@ describe D2lImporter::Converter do
     it "should export a course hash" do
       expect{subject.export}.not_to raise_error
       expect(subject.export).to be_a Hash
+      expect(subject.resources).not_to be_nil
+      puts subject.resources.inspect
     end
   end
 end

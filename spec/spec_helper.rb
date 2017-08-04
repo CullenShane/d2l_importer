@@ -1,7 +1,7 @@
 require "bundler/setup"
 Bundler.setup
-require "d2l_importer"
 require "fake_canvas"
+require "d2l_importer"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

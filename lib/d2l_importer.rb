@@ -1,7 +1,7 @@
-require "d2l_importer/version"
+require_relative "d2l_importer/version"
 require "rails"
-require "d2l_importer/engine"
-# require "d2l_importer/converter"
+require_relative "d2l_importer/engine"
+# require_relative "d2l_importer/converter"
 
 module D2lImporter
   module Canvas
