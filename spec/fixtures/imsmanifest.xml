@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest identifier="d2l_1234">
+  <organizations identifier="d2l_orgs">
+    <organization idenfier="d2l_org">
+      <item identifier="1" identifierref="RES_CONTENT_42" d2l_2p0:id="1" description="" completion_type="2">
+        <title>Getting Started</title>
+        <item identifier="2" identifierref="RES_CONTENT_244" d2l_2p0:id="2" d2l_2p0:resource_code="idealnmsupp-92985" description="" completion_type="2" resource_type_key="">
+          <title>Meet your teacher!</title>
+        </item>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES_CONTENT_42" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title=""/>
+    <resource identifier="RES_CONTENT_244" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Meet your teacher!.html" title=""/>
+  </resources>
+</manifest>

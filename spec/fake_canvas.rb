@@ -8,7 +8,7 @@ module ::Canvas
       def initialize(settings, migration_type)
         raise "Settings must be set" if settings.empty?
         @course = {}
-        @unzipped_file_path = ''
+        @unzipped_file_path = settings[:unzipped_file_path]
       end
 
       def export(scope={})
@@ -22,7 +22,7 @@ module ::Canvas
     end
     module XMLHelper
       def open_file(path)
-        ::Nokogiri::HTML ""
+        ::Nokogiri::HTML File.open(path)
       end
     end
   end

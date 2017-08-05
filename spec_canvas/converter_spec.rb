@@ -38,9 +38,12 @@ describe D2lImporter::Converter do
     subject { D2lImporter::Converter.new({archive_file: archive_file}) }
     it "should export a course hash" do
       expect{subject.export}.not_to raise_error
-      expect(subject.export).to be_a Hash
+      expect(subject.course).to be_a Hash
       expect(subject.resources).not_to be_nil
-      puts subject.resources.inspect
+      expect(subject.resources).to be_a Hash
+      subject.resources.each do |resource_key, resource|
+        expect(resource).to include :type, :material_type, :href, :migration_id
+      end
     end
   end
 end

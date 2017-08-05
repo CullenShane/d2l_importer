@@ -17,7 +17,7 @@ module D2lImporter
       set_progress(5)
 
       @manifest = open_file(File.join(@unzipped_file_path, MANIFEST_FILE))
-      get_all_resources(@manifest)
+      consume_resources(@manifest)
 
 
       delete_unzipped_archive
@@ -28,7 +28,7 @@ module D2lImporter
       @resources
     end
 
-    def get_all_resources(manifest)
+    def consume_resources(manifest)
       manifest.css('resource').each do |r_node|
         id = r_node['identifier']
         resource = @resources[id]
@@ -37,27 +37,11 @@ module D2lImporter
         resource[:href] = r_node['href']
         if resource[:href]
           resource[:href] = resource[:href].gsub('\\', '/')
-        else
-          #it could be embedded in the manifest
-          @resource_nodes_for_flat_manifest[id] = r_node
         end
-        # Should be "Learner", "Instructor", or "Mentor"
-        resource[:intended_user_role] = get_node_val(r_node, "intendedEndUserRole value", nil)
-        # Should be "assignment", "lessonplan", "syllabus", or "unspecified"
-        resource[:intended_use] = r_node['intendeduse']
-        resource[:files] = []
-        r_node.css('file').each do |file_node|
-          resource[:files] << {:href => file_node[:href].gsub('\\', '/')}
-        end
-        resource[:dependencies] = []
-        r_node.css('dependency').each do |d_node|
-          resource[:dependencies] << d_node[:identifierref]
-        end
-        if variant = r_node.at_css('variant')
-          resource[:preferred_resource_id] = variant['identifierref']
-        end
+        resource[:material_type] = r_node.find {|k,v| k.match('material_type') }[1]
         @resources[id] = resource
       end
+      @resources
     end
   end
 end
