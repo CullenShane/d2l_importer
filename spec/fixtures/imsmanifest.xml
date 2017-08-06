@@ -7,11 +7,15 @@
         <item identifier="2" identifierref="RES_CONTENT_244" d2l_2p0:id="2" d2l_2p0:resource_code="idealnmsupp-92985" description="" completion_type="2" resource_type_key="">
           <title>Meet your teacher!</title>
         </item>
+        <item identifier="8557" identifierref="RES_CONTENT_8557" d2l_2p0:id="3" description="&lt;span class=&quot;fnt0&quot;&gt; &lt;img style=&quot;WIDTH: 139px; HEIGHT: 73px&quot; height=&quot;73&quot; alt=&quot;&quot; src=&quot;Introduce Youself!/embedded/kids_shaking_hands.jpg&quot; width=&quot;139&quot; border=&quot;0&quot; /&gt; &lt;p&gt;Whether our class is small or large, it is always nice to 'get to know' each other :) In your post to this first discussion board, please share the following:&lt;/p&gt;&lt;p&gt;1. Who you are (name, grade, school)&lt;/p&gt;&lt;p&gt;2. Something about yourself (appropriate! Something we'd like to learn about you.)&lt;/p&gt;&lt;p&gt;3. One (or more) of your &lt;strong&gt;&lt;u&gt;favorites&lt;/u&gt;&lt;/strong&gt;! (favorite color, food, activity, etc.)&lt;/p&gt;&lt;/span&gt;" completion_type="2" resource_type_key="">
+          <title>Introduce Youself!</title>
+        </item>
       </item>
     </organization>
   </organizations>
   <resources>
     <resource identifier="RES_CONTENT_42" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title=""/>
     <resource identifier="RES_CONTENT_244" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Meet your teacher!.html" title=""/>
+    <resource identifier="RES_CONTENT_8557" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=discuss&amp;rCode=019c73b0-e08e-4030-ae29-05956f973b1d" title="" />
   </resources>
 </manifest>

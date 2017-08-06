@@ -24,6 +24,10 @@ module ::Canvas
       def open_file(path)
         ::Nokogiri::HTML File.open(path)
       end
+
+      def get_node_val(node, selector, default=nil)
+        node.at_css(selector) ? node.at_css(selector).text : default
+      end
     end
   end
 end

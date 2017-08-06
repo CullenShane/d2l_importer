@@ -12,15 +12,15 @@ describe D2lImporter::Converter do
 
   before do
     Rails.application =
-        Class.new do
-          def self.config
-            Class.new do
-              def self.root
-                Pathname.new(File.path(__dir__))
-              end
+      Class.new do
+        def self.config
+          Class.new do
+            def self.root
+              Pathname.new(File.path(__dir__))
             end
           end
         end
+      end
   end
 
   it 'should initalize' do
