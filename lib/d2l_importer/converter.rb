@@ -19,9 +19,10 @@ module D2lImporter
       @manifest = open_file(File.join(@unzipped_file_path, MANIFEST_FILE))
       set_progress(10)
       consume_resources(@manifest)
-      reorganize_organization(@manifest)
+      set_progress(20)
+      @course[:modules] = reorganize_organization(@manifest)
 
-
+      save_to_file
       delete_unzipped_archive
       @course
     end

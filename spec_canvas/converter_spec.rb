@@ -44,6 +44,7 @@ describe D2lImporter::Converter do
       subject.resources.each do |resource_key, resource|
         expect(resource).to include :type, :material_type, :href, :migration_id
       end
+      expect(subject.course[:modules]).to be_a Array
     end
   end
 end

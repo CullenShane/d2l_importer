@@ -36,6 +36,7 @@ describe D2lImporter::Converter do
       expect(subject.export).to be_a Hash
       expect(subject.resources).not_to be_nil
       expect(subject.resources).to be_a Hash
+      expect(subject.export[:modules]).to be_a Array
     end
   end
 
@@ -65,7 +66,7 @@ describe D2lImporter::Converter do
       expect(subject).not_to be_empty
       expect(subject.first[:title]).to eq 'Getting Started'
       expect(subject.first[:items]).to be_an Array
-      expect(subject.first[:items].length).to eq 2
+      expect(subject.first[:items].length).to eq 1
     end
   end
 end

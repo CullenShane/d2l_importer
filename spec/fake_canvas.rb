@@ -17,6 +17,7 @@ module ::Canvas
 
       def unzip_archive; end
       def delete_unzipped_archive; end
+      def save_to_file; end
       def set_progress(progress); end
       def get_all_resources(manifestfile); end
     end
