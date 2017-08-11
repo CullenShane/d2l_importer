@@ -66,7 +66,31 @@ describe D2lImporter::Converter do
       expect(subject).not_to be_empty
       expect(subject.first[:title]).to eq 'Getting Started'
       expect(subject.first[:items]).to be_an Array
-      expect(subject.first[:items].length).to eq 1
+      expect(subject.first[:items].length).to eq 1 #TODO: This should be 2
+    end
+  end
+
+  context '#create_file_map' do
+    let(:manifest) { ::Nokogiri::HTML File.open File.join(__dir__, 'fixtures','imsmanifest.xml') }
+    let(:converter) { D2lImporter::Converter.new( {archive_file: nil} ) }
+    before { converter.consume_resources(manifest) }
+    subject { converter.create_file_map(manifest) }
+    it 'will return an array' do
+      expect{subject}.not_to raise_error
+      expect(subject).to be_a Hash
+      expect(subject).not_to be_empty
+      expect(subject.length).to be 1
+      expect(subject['RES_CONTENT_244'].keys).to include :migration_id, :path_name, :file_name, :type
+    end
+    context '#package_course_files' do
+      let(:course) { { file_map: converter.create_file_map(manifest) } }
+      subject { converter.package_course_files(course) }
+      it 'will write a file' do
+        expect{subject}.not_to raise_error
+        expect(subject).to be_a String
+        puts subject
+        expect(File.exist? subject).to be true
+      end
     end
   end
 end

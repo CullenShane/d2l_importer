@@ -45,6 +45,9 @@ describe D2lImporter::Converter do
         expect(resource).to include :type, :material_type, :href, :migration_id
       end
       expect(subject.course[:modules]).to be_a Array
+      expect(subject.course[:file_map]).to be_a Hash
+      expect(subject.course[:all_files_zip]).to be_a String
+      expect(File.exist? subject.course[:all_files_zip]).to be_truthy
     end
   end
 end

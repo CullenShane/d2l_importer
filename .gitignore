@@ -13,3 +13,4 @@
 
 # Staaahhhhhppp Rubymine
 /.idea/*
+/spec/fixtures/all_files.zip

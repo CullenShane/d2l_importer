@@ -9,17 +9,32 @@ module ::Canvas
         raise "Settings must be set" if settings.empty?
         @course = {}
         @unzipped_file_path = settings[:unzipped_file_path]
+        @base_export_dir = File.join(__dir__,'fixtures','export')
+        @unzipped_file_path = File.join(__dir__,'fixtures')
       end
 
       def export(scope={})
         raise "Must be implemented by other peeps"
       end
 
-      def unzip_archive; end
-      def delete_unzipped_archive; end
+      def unzip_archive
+        clean_up
+      end
+      def delete_unzipped_archive
+        clean_up
+      end
       def save_to_file; end
+      def make_export_dir; end
       def set_progress(progress); end
       def get_all_resources(manifestfile); end
+      def add_warning(arg); end
+
+      private
+
+      def clean_up
+        file = File.join(@base_export_dir, 'all_files.zip')
+        File.delete file if File.exists? file
+      end
     end
     module XMLHelper
       def open_file(path)
