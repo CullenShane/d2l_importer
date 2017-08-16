@@ -2,6 +2,7 @@ require 'zip'
 require_relative 'resource_consumer'
 require_relative 'organization_reorganizer'
 require_relative 'consume_files'
+require_relative 'wiki_builder'
 
 module D2lImporter
   class Converter < ::Canvas::Migration::Migrator
@@ -10,6 +11,7 @@ module D2lImporter
     include ResourceConsumer
     include OrganizationReorganizer
     include ConsumeFiles
+    include WikiBuilder
 
     def initialize(settings)
       super(settings, 'd2l')
@@ -28,7 +30,7 @@ module D2lImporter
       set_progress(10)
       consume_resources(@manifest)
       set_progress(20)
-      # @course[:file_map] = create_file_map(@resources)
+      @course[:wikis] = create_wikis(@manifest)
       set_progress(30)
       # @course[:all_files_zip] = package_course_files(@course)
       set_progress(40)

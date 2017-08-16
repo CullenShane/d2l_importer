@@ -37,6 +37,7 @@ describe D2lImporter::Converter do
       expect(subject.resources).not_to be_nil
       expect(subject.resources).to be_a Hash
       expect(subject.export[:modules]).to be_a Array
+      expect(subject.export[:wikis]).to be_a Array
     end
   end
 end

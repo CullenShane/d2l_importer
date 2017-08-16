@@ -33,15 +33,16 @@ module OrganizationReorganizer
       when 'contentmodule'
       when 'content'
         mod_item = {
-          indent: 1,
-          linked_resource_id: item_node['indentifierref'],
+          type: 'linked_resource',
+          item_migration_id: item_node['identifier'],
+          linked_resource_id: item_node['identifierref'],
           linked_resource_title: get_node_val(item_node, 'title'),
-          linked_resource_type: "FILE_TYPE"
+          linked_resource_type: 'wikipage'
         }
       when 'contentlink'
 
     end
-    return mod_item
+    mod_item
   end
 
 end
