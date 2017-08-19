@@ -40,6 +40,8 @@ module OrganizationReorganizer
           linked_resource_type: 'wikipage'
         }
       when 'contentlink'
+        # This needs to parse the special href that's there and get the wacky hash ID out, it also needs
+        # to setup the linked_resource_type to be correct for the D2l type
 
     end
     mod_item

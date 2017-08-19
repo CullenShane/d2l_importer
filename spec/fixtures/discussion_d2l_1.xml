@@ -1,0 +1,56 @@
+﻿<discussion>
+  <forum id="260" resource_code="019c73b0-e08e-4030-ae29-05956f973b1d">
+    <properties>
+      <allow_anon>False</allow_anon>
+      <display_order>2</display_order>
+      <is_hidden>False</is_hidden>
+      <requires_approval>False</requires_approval>
+      <is_locked>False</is_locked>
+      <must_post_to_participate>False</must_post_to_participate>
+      <show_description_in_topics>False</show_description_in_topics>
+    </properties>
+    <content>
+      <title>Introduce Youself!</title>
+      <description>&lt;p&gt;&lt;span class="fnt0"&gt;&lt;span class="fnt0"&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;p&gt;Whether our class is small or large, it is always nice to 'get to know' each other :) In your post to
+        this first discussion board, please share the following:&lt;/p&gt;
+        &lt;p&gt;1. Who you are (name, grade, school)&lt;/p&gt;
+        &lt;p&gt;2. Something about yourself (appropriate! Something we'd like to learn about you.)&lt;/p&gt;
+        &lt;p&gt;3. One (or more) of your&amp;nbsp;&lt;strong&gt;&lt;u&gt;favorites&lt;/u&gt;&lt;/strong&gt;! (favorite
+        color, food, activity, etc.)&lt;/p&gt;
+        &lt;p&gt;*After clicking the link, click the button "Start a New Thread," then key in your discussion. &amp;nbsp;
+        Then click the "Post" button.&amp;nbsp;&lt;/p&gt;
+      </description>
+    </content>
+    <topics>
+      <topic id="261" resource_code="idealnmsupp-92984">
+        <properties>
+          <allow_anon>False</allow_anon>
+          <display_order>1</display_order>
+          <is_hidden>False</is_hidden>
+          <requires_approval>False</requires_approval>
+          <must_post_to_participate>False</must_post_to_participate>
+          <is_locked>False</is_locked>
+          <score_out_of>10</score_out_of>
+          <is_auto_score>False</is_auto_score>
+          <grade_item_id>idealnmsupp-92983</grade_item_id>
+          <include_nonscored_values>False</include_nonscored_values>
+          <rating_type_id>0</rating_type_id>
+        </properties>
+        <content>
+          <title>Discussion: Introduce Yourself</title>
+          <description>&lt;p&gt;&lt;span class="fnt0"&gt;&lt;span class="fnt0"&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+            &lt;p&gt;Whether our class is small or large, it is always nice to 'get to know' each other :) In your post
+            to this first discussion board, please share the following:&lt;/p&gt;
+            &lt;p&gt;1. Who you are (name, grade, school)&lt;/p&gt;
+            &lt;p&gt;2. Something about yourself (appropriate! Something we'd like to learn about you.)&lt;/p&gt;
+            &lt;p&gt;3. One (or more) of your&amp;nbsp;&lt;strong&gt;&lt;u&gt;favorites&lt;/u&gt;&lt;/strong&gt;!
+            (favorite color, food, activity, etc.)&lt;/p&gt;
+            &lt;p&gt;*After clicking the link, click the button "Start a New Thread," then key in your discussion. &amp;nbsp;
+            Then click the "Post" button.&amp;nbsp;&lt;/p&gt;
+          </description>
+        </content>
+      </topic>
+    </topics>
+  </forum>
+</discussion>

@@ -8,4 +8,9 @@ module D2lImporter
 
   end
   autoload :Converter, 'd2l_importer/converter'
+  autoload :WikiBuilder, 'd2l_importer/wiki_builder'
+  autoload :ResourceConsumer, 'd2l_importer/resource_consumer'
+  autoload :OrganizationReorganizer, 'd2l_importer/organization_reorganizer'
+  autoload :ConsumeFiles, 'd2l_importer/consume_files'
+  autoload :DiscussionConverter, 'd2l_importer/discussion_converter'
 end

@@ -7,7 +7,7 @@ module ConsumeFiles
     # accessed by the wiki pages as content
 
     # resources.css("resource[type=webcontent][href$='.html'][material_type='content']").each do |res|
-    resources_by(:material_type, 'content', 'webcontent').each do |res|
+    resources_by(resources, :material_type, 'content', 'webcontent').each do |res|
       file = {}
       # file[:migration_id] = res['identifier']
       # file[:path_name] = res['href']

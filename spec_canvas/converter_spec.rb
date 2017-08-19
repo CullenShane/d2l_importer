@@ -49,6 +49,7 @@ describe D2lImporter::Converter do
       # expect(subject.course[:all_files_zip]).to be_a String
       # expect(File.exist? subject.course[:all_files_zip]).to be_truthy
       expect(subject.course[:wikis]).to be_a Array
+      expect(subject.course[:discussion_topics]).to be_a Array
     end
   end
 end
