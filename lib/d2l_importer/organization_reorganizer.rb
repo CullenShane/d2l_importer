@@ -42,9 +42,32 @@ module OrganizationReorganizer
       when 'contentlink'
         # This needs to parse the special href that's there and get the wacky hash ID out, it also needs
         # to setup the linked_resource_type to be correct for the D2l type
+        mod_item = {
+          type: 'linked_resource',
+          item_migration_id: item_node['identifier'],
+          linked_resource_id: get_d2l_code_from(res[:href]),
+          linked_resource_title: get_node_val(item_node, 'title'),
+          linked_resource_type: get_d2l_type_from(res[:href])
+        }
 
     end
     mod_item
+  end
+
+  def get_d2l_code_from(href)
+    matcher = /rCode=(?<code>[0-9a-z-]+)/
+    if matcher.match?(href)
+      matcher.match(href)[:code]
+    end
+  end
+
+  def get_d2l_type_from(href)
+    matcher = /type=(?<type>[a-z]+)/
+    return unless matcher.match?(href)
+    case matcher.match(href)[:type]
+      when 'discuss'
+        'discussion'
+    end
   end
 
 end
