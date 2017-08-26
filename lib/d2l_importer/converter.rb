@@ -9,6 +9,7 @@ module D2lImporter
     include ConsumeFiles
     include WikiBuilder
     include DiscussionConverter
+    include QuizConverter
 
 
     def initialize(settings)
@@ -32,6 +33,8 @@ module D2lImporter
       set_progress(30)
       @course[:discussion_topics] = convert_discussions(@resources)
       set_progress(40)
+      @course[:assessments] = convert_quizzes(@resources)
+      set_progress(50)
       @course[:modules] = reorganize_organization(@manifest)
 
       save_to_file

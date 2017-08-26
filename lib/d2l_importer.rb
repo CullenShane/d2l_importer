@@ -13,4 +13,5 @@ module D2lImporter
   autoload :OrganizationReorganizer, 'd2l_importer/organization_reorganizer'
   autoload :ConsumeFiles, 'd2l_importer/consume_files'
   autoload :DiscussionConverter, 'd2l_importer/discussion_converter'
+  autoload :QuizConverter, 'd2l_importer/quiz_converter'
 end

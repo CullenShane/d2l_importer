@@ -1,6 +1,7 @@
 require "bundler/setup"
 Bundler.setup
 require "fake_canvas"
+require "fake_qti"
 require "d2l_importer"
 
 RSpec.configure do |config|

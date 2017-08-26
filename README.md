@@ -15,6 +15,9 @@ Then you'll want to add the following line to `/app/views/content_migrations/ind
 Ideally once this is all working you'll be able to import things from D2L
 by using the built in converter.
 
+Your canvas installation will have to have the Instructure QTIMigrationTool installed properly 
+to use this tool.
+
 ## Development
 
 Development is really similar to developing for Canvas.  Check out [their docs](https://github.com/instructure/canvas-lms/tree/stable/doc)

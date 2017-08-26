@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns:d2l_2p0="http://desire2learn.com/xsd/d2lcp_v2p0">
+  <assessment d2l_2p0:id="255" title="5.6 A1 Multiplying Exponential Expressions" ident="res_quiz_1"
+              d2l_2p0:resource_code="idealnmsupp-92981">
+    <rubric>
+      <flow_mat>
+        <material>
+          <mattext d2l_2p0:isdisplayed="yes" texttype="text/html"/>
+        </material>
+      </flow_mat>
+    </rubric>
+    <assessmentcontrol hintswitch="yes" solutionswitch="yes" feedbackswitch="no"/>
+    <presentation_material>
+      <flow_mat>
+        <material label="page header">
+          <mattext d2l_2p0:isdisplayed="yes" texttype="text/plain"/>
+        </material>
+        <material label="page footer">
+          <mattext d2l_2p0:isdisplayed="yes" texttype="text/plain"/>
+        </material>
+      </flow_mat>
+    </presentation_material>
+    <assess_procextension>
+      <d2l_2p0:intro_message d2l_2p0:isdisplayed="yes" texttype="text/html"/>
+      <d2l_2p0:disable_right_click>yes</d2l_2p0:disable_right_click>
+      <d2l_2p0:disable_pager_access>yes</d2l_2p0:disable_pager_access>
+      <is_active>yes</is_active>
+      <d2l_2p0:date_start/>
+      <d2l_2p0:date_end/>
+      <d2l_2p0:has_schedule_event>no</d2l_2p0:has_schedule_event>
+      <d2l_2p0:is_attempt_Rldb>no</d2l_2p0:is_attempt_Rldb>
+      <d2l_2p0:is_subview_Rldb>no</d2l_2p0:is_subview_Rldb>
+      <d2l_2p0:time_limit>120</d2l_2p0:time_limit>
+      <d2l_2p0:show_clock>yes</d2l_2p0:show_clock>
+      <d2l_2p0:enforce_time_limit>yes</d2l_2p0:enforce_time_limit>
+      <d2l_2p0:grace_period>5</d2l_2p0:grace_period>
+      <d2l_2p0:late_limit>1</d2l_2p0:late_limit>
+      <d2l_2p0:attempts_allowed>1</d2l_2p0:attempts_allowed>
+      <d2l_2p0:attempt_restrictions/>
+      <d2l_2p0:mark_calculation_type>1</d2l_2p0:mark_calculation_type>
+      <d2l_2p0:is_forward_only>no</d2l_2p0:is_forward_only>
+    </assess_procextension>
+    <section ident="CONTAINER_SECTION">
+      <item ident="OBJ_12565" label="QUES_12451_12465" d2l_2p0:page="1">
+        <itemmetadata>
+          <qtimetadata>
+            <qti_metadatafield>
+              <fieldlabel>qmd_computerscored</fieldlabel>
+              <fieldentry>yes</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_questiontype</fieldlabel>
+              <fieldentry>Long Answer</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_weighting</fieldlabel>
+              <fieldentry>2.000000000</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_globalid</fieldlabel>
+              <fieldentry>db813aae-d3b4-4655-b590-0e5c80d06fd4</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_displayid</fieldlabel>
+              <fieldentry>IDL2021_S1_MASTER_2013_20160524113513-124</fieldentry>
+            </qti_metadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <itemproc_extension>
+          <d2l_2p0:difficulty>0</d2l_2p0:difficulty>
+          <d2l_2p0:isbonus>no</d2l_2p0:isbonus>
+          <d2l_2p0:ismandatory>yes</d2l_2p0:ismandatory>
+        </itemproc_extension>
+        <presentation>
+          <flow>
+            <material>
+              <mattext texttype="text/html">&lt;span style="font-size:12pt"&gt;How many 6&amp;#039;s are multiplied
+                together in the expression 6&lt;sup&gt;3&lt;/sup&gt;? How many in 6&lt;sup&gt;4&lt;/sup&gt;?&lt;/span&gt;
+              </mattext>
+            </material>
+            <response_extension>
+              <d2l_2p0:has_signed_comments>no</d2l_2p0:has_signed_comments>
+              <d2l_2p0:has_htmleditor>yes</d2l_2p0:has_htmleditor>
+            </response_extension>
+            <response_str ident="QUES_12451_12465_STR" rcardinality="Multiple">
+              <render_fib rows="0" columns="20" prompt="Box" fibtype="String">
+                <response_label ident="QUES_12451_12465_LA">
+                  <material>
+                    <mattext texttype="text/plain"/>
+                  </material>
+                </response_label>
+              </render_fib>
+            </response_str>
+          </flow>
+        </presentation>
+        <answer_key>
+          <answer_key_material>
+            <flow_mat>
+              <material>
+                <mattext texttype="text/html">3, 4</mattext>
+              </material>
+            </flow_mat>
+          </answer_key_material>
+        </answer_key>
+      </item>
+      <item ident="OBJ_12566" label="QUES_12452_12466" d2l_2p0:page="1">
+        <itemmetadata>
+          <qtimetadata>
+            <qti_metadatafield>
+              <fieldlabel>qmd_computerscored</fieldlabel>
+              <fieldentry>yes</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_questiontype</fieldlabel>
+              <fieldentry>Long Answer</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_weighting</fieldlabel>
+              <fieldentry>2.000000000</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_globalid</fieldlabel>
+              <fieldentry>3ac9ada6-d9f0-46f0-b3c6-2380ca997b3e</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_displayid</fieldlabel>
+              <fieldentry>IDL2021_S1_MASTER_2013_20160524113513-125</fieldentry>
+            </qti_metadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <itemproc_extension>
+          <d2l_2p0:difficulty>0</d2l_2p0:difficulty>
+          <d2l_2p0:isbonus>no</d2l_2p0:isbonus>
+          <d2l_2p0:ismandatory>yes</d2l_2p0:ismandatory>
+        </itemproc_extension>
+        <presentation>
+          <flow>
+            <material>
+              <mattext texttype="text/html">The expression 6&lt;img width="7" height="19" align="bottom"
+                alt="sa002-1.jpg" src="ppg/examview/5-6A1/sa002-1.jpg" border="0"&gt; means that three 6&amp;#8217;s are
+                multiplied together ( 6*6*6).&amp;nbsp; Similarly, 6&lt;img width="7" height="19" align="bottom"
+                alt="sa002-2.jpg" src="ppg/examview/5-6A1/sa002-2.jpg" border="0"&gt; represents four 6&amp;#8217;s
+                multiplied together.&amp;nbsp; So, in the expression 6&lt;img width="7" height="19" align="bottom"
+                alt="sa002-3.jpg" src="ppg/examview/5-6A1/sa002-3.jpg" border="0"&gt; * 6&lt;img width="7" height="19"
+                align="bottom" alt="sa002-4.jpg" src="ppg/examview/5-6A1/sa002-4.jpg" border="0"&gt; , what is the total
+                number of 6&amp;#8217;s being multiplied together?
+              </mattext>
+            </material>
+            <response_extension>
+              <d2l_2p0:has_signed_comments>no</d2l_2p0:has_signed_comments>
+              <d2l_2p0:has_htmleditor>yes</d2l_2p0:has_htmleditor>
+            </response_extension>
+            <response_str ident="QUES_12452_12466_STR" rcardinality="Multiple">
+              <render_fib rows="0" columns="20" prompt="Box" fibtype="String">
+                <response_label ident="QUES_12452_12466_LA">
+                  <material>
+                    <mattext texttype="text/plain"/>
+                  </material>
+                </response_label>
+              </render_fib>
+            </response_str>
+          </flow>
+        </presentation>
+        <answer_key>
+          <answer_key_material>
+            <flow_mat>
+              <material>
+                <mattext texttype="text/html">7</mattext>
+              </material>
+            </flow_mat>
+          </answer_key_material>
+        </answer_key>
+      </item>
+      <item ident="OBJ_12567" label="QUES_12453_12467" d2l_2p0:page="1">
+        <itemmetadata>
+          <qtimetadata>
+            <qti_metadatafield>
+              <fieldlabel>qmd_computerscored</fieldlabel>
+              <fieldentry>yes</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_questiontype</fieldlabel>
+              <fieldentry>Long Answer</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_weighting</fieldlabel>
+              <fieldentry>2.000000000</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_globalid</fieldlabel>
+              <fieldentry>75850ffb-bc5f-43b0-b84b-c316144637be</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_displayid</fieldlabel>
+              <fieldentry>IDL2021_S1_MASTER_2013_20160524113513-126</fieldentry>
+            </qti_metadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <itemproc_extension>
+          <d2l_2p0:difficulty>0</d2l_2p0:difficulty>
+          <d2l_2p0:isbonus>no</d2l_2p0:isbonus>
+          <d2l_2p0:ismandatory>yes</d2l_2p0:ismandatory>
+        </itemproc_extension>
+        <presentation>
+          <flow>
+            <material>
+              <mattext texttype="text/html">What mathematical operation do you perform on the 3 and 4 to figure out how
+                many 6&amp;#8217;s are being multiplied?
+              </mattext>
+            </material>
+            <response_extension>
+              <d2l_2p0:has_signed_comments>no</d2l_2p0:has_signed_comments>
+              <d2l_2p0:has_htmleditor>yes</d2l_2p0:has_htmleditor>
+            </response_extension>
+            <response_str ident="QUES_12453_12467_STR" rcardinality="Multiple">
+              <render_fib rows="0" columns="20" prompt="Box" fibtype="String">
+                <response_label ident="QUES_12453_12467_LA">
+                  <material>
+                    <mattext texttype="text/plain"/>
+                  </material>
+                </response_label>
+              </render_fib>
+            </response_str>
+          </flow>
+        </presentation>
+        <answer_key>
+          <answer_key_material>
+            <flow_mat>
+              <material>
+                <mattext texttype="text/html">addition</mattext>
+              </material>
+            </flow_mat>
+          </answer_key_material>
+        </answer_key>
+      </item>
+      <item ident="OBJ_12568" label="QUES_12454_12468" d2l_2p0:page="1">
+        <itemmetadata>
+          <qtimetadata>
+            <qti_metadatafield>
+              <fieldlabel>qmd_computerscored</fieldlabel>
+              <fieldentry>yes</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_questiontype</fieldlabel>
+              <fieldentry>Long Answer</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_weighting</fieldlabel>
+              <fieldentry>2.000000000</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_globalid</fieldlabel>
+              <fieldentry>f72628af-e076-43dc-9019-f370d59dc487</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_displayid</fieldlabel>
+              <fieldentry>IDL2021_S1_MASTER_2013_20160524113513-127</fieldentry>
+            </qti_metadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <itemproc_extension>
+          <d2l_2p0:difficulty>0</d2l_2p0:difficulty>
+          <d2l_2p0:isbonus>no</d2l_2p0:isbonus>
+          <d2l_2p0:ismandatory>yes</d2l_2p0:ismandatory>
+        </itemproc_extension>
+        <presentation>
+          <flow>
+            <material>
+              <mattext texttype="text/html">What is 6&lt;img width="7" height="19" align="bottom" alt="sa004-1.jpg"
+                src="ppg/examview/5-6A1/sa004-1.jpg" border="0"&gt; * 6&lt;img width="7" height="19" align="bottom"
+                alt="sa004-2.jpg" src="ppg/examview/5-6A1/sa004-2.jpg" border="0"&gt; equal to? ( you can use a carrot
+                for exponents.&amp;nbsp; For example 1^5 would be the same thing as 1&lt;img width="7" height="19"
+                align="bottom" alt="sa004-3.jpg" src="ppg/examview/5-6A1/sa004-3.jpg" border="0"&gt;)
+              </mattext>
+            </material>
+            <response_extension>
+              <d2l_2p0:has_signed_comments>no</d2l_2p0:has_signed_comments>
+              <d2l_2p0:has_htmleditor>yes</d2l_2p0:has_htmleditor>
+            </response_extension>
+            <response_str ident="QUES_12454_12468_STR" rcardinality="Multiple">
+              <render_fib rows="0" columns="20" prompt="Box" fibtype="String">
+                <response_label ident="QUES_12454_12468_LA">
+                  <material>
+                    <mattext texttype="text/plain"/>
+                  </material>
+                </response_label>
+              </render_fib>
+            </response_str>
+          </flow>
+        </presentation>
+        <answer_key>
+          <answer_key_material>
+            <flow_mat>
+              <material>
+                <mattext texttype="text/html">6^7</mattext>
+              </material>
+            </flow_mat>
+          </answer_key_material>
+        </answer_key>
+      </item>
+      <item ident="OBJ_12569" label="QUES_12455_12469" d2l_2p0:page="1">
+        <itemmetadata>
+          <qtimetadata>
+            <qti_metadatafield>
+              <fieldlabel>qmd_computerscored</fieldlabel>
+              <fieldentry>yes</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_questiontype</fieldlabel>
+              <fieldentry>Matching</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_weighting</fieldlabel>
+              <fieldentry>10.000000000</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_globalid</fieldlabel>
+              <fieldentry>51cfb1aa-07ab-441f-9e6d-99641563b9fd</fieldentry>
+            </qti_metadatafield>
+            <qti_metadatafield>
+              <fieldlabel>qmd_displayid</fieldlabel>
+              <fieldentry>IDL2021_S1_MASTER_2013_20160524113513-128</fieldentry>
+            </qti_metadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <itemproc_extension>
+          <d2l_2p0:difficulty>0</d2l_2p0:difficulty>
+          <d2l_2p0:isbonus>no</d2l_2p0:isbonus>
+          <d2l_2p0:ismandatory>yes</d2l_2p0:ismandatory>
+        </itemproc_extension>
+        <presentation>
+          <flow>
+            <material>
+              <mattext texttype="text/html"/>
+            </material>
+            <response_extension>
+              <d2l_2p0:grading_type>0</d2l_2p0:grading_type>
+            </response_extension>
+            <response_grp respident="QUES_12455_12469_C42883" rcardinality="Single">
+              <material>
+                <mattext texttype="text/html">4</mattext>
+              </material>
+              <render_choice shuffle="yes">
+                <flow_label class="Block">
+                  <response_label ident="QUES_12455_12469_M42878">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are mulitplied in the expression x&lt;img height="19"
+                          alt="ma005-1.jpg" src="ppg/examview/5-6A1/ma005-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42879">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What is the total number number of x's being multipled together in
+                          (x&lt;img height="19" alt="ma006-1.jpg" src="ppg/examview/5-6A1/ma006-1.jpg" width="7"
+                          align="bottom" border="0" /&gt;)&lt;img height="19" alt="ma006-2.jpg"
+                          src="ppg/examview/5-6A1/ma006-2.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42880">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are multiplied in the expression x&lt;img height="19"
+                          alt="ma007-1.jpg" src="ppg/examview/5-6A1/ma007-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42881">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma008-1.jpg"
+                          src="ppg/examview/5-6A1/ma008-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma008-2.jpg" src="ppg/examview/5-6A1/ma008-2.jpg" width="7" align="bottom"
+                          border="0" /&gt; equal?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42882">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma009-1.jpg"
+                          src="ppg/examview/5-6A1/ma009-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma009-2.jpg" src="ppg/examview/5-6A1/ma009-2.jpg" width="7" align="bottom"
+                          border="0" /&gt;
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                </flow_label>
+              </render_choice>
+            </response_grp>
+            <response_grp respident="QUES_12455_12469_C42884" rcardinality="Single">
+              <material>
+                <mattext texttype="text/html">x&lt;img height="19" alt="grp001-1.jpg"
+                  src="ppg/examview/5-6A1/grp001-1.jpg" width="7" align="bottom" border="0" /&gt;
+                </mattext>
+              </material>
+              <render_choice shuffle="yes">
+                <flow_label class="Block">
+                  <response_label ident="QUES_12455_12469_M42878">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are mulitplied in the expression x&lt;img height="19"
+                          alt="ma005-1.jpg" src="ppg/examview/5-6A1/ma005-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42879">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What is the total number number of x's being multipled together in
+                          (x&lt;img height="19" alt="ma006-1.jpg" src="ppg/examview/5-6A1/ma006-1.jpg" width="7"
+                          align="bottom" border="0" /&gt;)&lt;img height="19" alt="ma006-2.jpg"
+                          src="ppg/examview/5-6A1/ma006-2.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42880">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are multiplied in the expression x&lt;img height="19"
+                          alt="ma007-1.jpg" src="ppg/examview/5-6A1/ma007-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42881">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma008-1.jpg"
+                          src="ppg/examview/5-6A1/ma008-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma008-2.jpg" src="ppg/examview/5-6A1/ma008-2.jpg" width="7" align="bottom"
+                          border="0" /&gt; equal?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42882">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma009-1.jpg"
+                          src="ppg/examview/5-6A1/ma009-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma009-2.jpg" src="ppg/examview/5-6A1/ma009-2.jpg" width="7" align="bottom"
+                          border="0" /&gt;
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                </flow_label>
+              </render_choice>
+            </response_grp>
+            <response_grp respident="QUES_12455_12469_C42885" rcardinality="Single">
+              <material>
+                <mattext texttype="text/html">x&lt;img height="19" alt="grp001-2.jpg"
+                  src="ppg/examview/5-6A1/grp001-2.jpg" width="7" align="bottom" border="0" /&gt;
+                </mattext>
+              </material>
+              <render_choice shuffle="yes">
+                <flow_label class="Block">
+                  <response_label ident="QUES_12455_12469_M42878">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are mulitplied in the expression x&lt;img height="19"
+                          alt="ma005-1.jpg" src="ppg/examview/5-6A1/ma005-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42879">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What is the total number number of x's being multipled together in
+                          (x&lt;img height="19" alt="ma006-1.jpg" src="ppg/examview/5-6A1/ma006-1.jpg" width="7"
+                          align="bottom" border="0" /&gt;)&lt;img height="19" alt="ma006-2.jpg"
+                          src="ppg/examview/5-6A1/ma006-2.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42880">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are multiplied in the expression x&lt;img height="19"
+                          alt="ma007-1.jpg" src="ppg/examview/5-6A1/ma007-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42881">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma008-1.jpg"
+                          src="ppg/examview/5-6A1/ma008-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma008-2.jpg" src="ppg/examview/5-6A1/ma008-2.jpg" width="7" align="bottom"
+                          border="0" /&gt; equal?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42882">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma009-1.jpg"
+                          src="ppg/examview/5-6A1/ma009-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma009-2.jpg" src="ppg/examview/5-6A1/ma009-2.jpg" width="7" align="bottom"
+                          border="0" /&gt;
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                </flow_label>
+              </render_choice>
+            </response_grp>
+            <response_grp respident="QUES_12455_12469_C42886" rcardinality="Single">
+              <material>
+                <mattext texttype="text/html">6</mattext>
+              </material>
+              <render_choice shuffle="yes">
+                <flow_label class="Block">
+                  <response_label ident="QUES_12455_12469_M42878">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are mulitplied in the expression x&lt;img height="19"
+                          alt="ma005-1.jpg" src="ppg/examview/5-6A1/ma005-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42879">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What is the total number number of x's being multipled together in
+                          (x&lt;img height="19" alt="ma006-1.jpg" src="ppg/examview/5-6A1/ma006-1.jpg" width="7"
+                          align="bottom" border="0" /&gt;)&lt;img height="19" alt="ma006-2.jpg"
+                          src="ppg/examview/5-6A1/ma006-2.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42880">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are multiplied in the expression x&lt;img height="19"
+                          alt="ma007-1.jpg" src="ppg/examview/5-6A1/ma007-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42881">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma008-1.jpg"
+                          src="ppg/examview/5-6A1/ma008-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma008-2.jpg" src="ppg/examview/5-6A1/ma008-2.jpg" width="7" align="bottom"
+                          border="0" /&gt; equal?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42882">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma009-1.jpg"
+                          src="ppg/examview/5-6A1/ma009-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma009-2.jpg" src="ppg/examview/5-6A1/ma009-2.jpg" width="7" align="bottom"
+                          border="0" /&gt;
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                </flow_label>
+              </render_choice>
+            </response_grp>
+            <response_grp respident="QUES_12455_12469_C42887" rcardinality="Single">
+              <material>
+                <mattext texttype="text/html">3</mattext>
+              </material>
+              <render_choice shuffle="yes">
+                <flow_label class="Block">
+                  <response_label ident="QUES_12455_12469_M42878">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are mulitplied in the expression x&lt;img height="19"
+                          alt="ma005-1.jpg" src="ppg/examview/5-6A1/ma005-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42879">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What is the total number number of x's being multipled together in
+                          (x&lt;img height="19" alt="ma006-1.jpg" src="ppg/examview/5-6A1/ma006-1.jpg" width="7"
+                          align="bottom" border="0" /&gt;)&lt;img height="19" alt="ma006-2.jpg"
+                          src="ppg/examview/5-6A1/ma006-2.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42880">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">How many x's are multiplied in the expression x&lt;img height="19"
+                          alt="ma007-1.jpg" src="ppg/examview/5-6A1/ma007-1.jpg" width="7" align="bottom" border="0" /&gt;?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42881">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma008-1.jpg"
+                          src="ppg/examview/5-6A1/ma008-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma008-2.jpg" src="ppg/examview/5-6A1/ma008-2.jpg" width="7" align="bottom"
+                          border="0" /&gt; equal?
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                  <response_label ident="QUES_12455_12469_M42882">
+                    <flow_mat>
+                      <material>
+                        <mattext texttype="text/html">What does (x&lt;img height="19" alt="ma009-1.jpg"
+                          src="ppg/examview/5-6A1/ma009-1.jpg" width="7" align="bottom" border="0" /&gt;)&lt;img
+                          height="19" alt="ma009-2.jpg" src="ppg/examview/5-6A1/ma009-2.jpg" width="7" align="bottom"
+                          border="0" /&gt;
+                        </mattext>
+                      </material>
+                    </flow_mat>
+                  </response_label>
+                </flow_label>
+              </render_choice>
+            </response_grp>
+          </flow>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar vartype="Integer" defaultval="0" varname="D2L_Correct" minvalue="0" maxvalue="100"/>
+            <decvar vartype="Integer" defaultval="0" varname="D2L_Incorrect" minvalue="0" maxvalue="100"/>
+            <decvar vartype="Decimal" defaultval="0" varname="que_score" minvalue="0" maxvalue="100"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42883">QUES_12455_12469_M42878</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42883">QUES_12455_12469_M42879</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42883">QUES_12455_12469_M42880</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Correct" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42883">QUES_12455_12469_M42881</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42883">QUES_12455_12469_M42882</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42884">QUES_12455_12469_M42878</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42884">QUES_12455_12469_M42879</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42884">QUES_12455_12469_M42880</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42884">QUES_12455_12469_M42881</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Correct" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42884">QUES_12455_12469_M42882</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42885">QUES_12455_12469_M42878</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42885">QUES_12455_12469_M42879</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42885">QUES_12455_12469_M42880</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42885">QUES_12455_12469_M42881</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42885">QUES_12455_12469_M42882</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Correct" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42886">QUES_12455_12469_M42878</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42886">QUES_12455_12469_M42879</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Correct" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42886">QUES_12455_12469_M42880</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42886">QUES_12455_12469_M42881</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42886">QUES_12455_12469_M42882</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42887">QUES_12455_12469_M42878</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Correct" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42887">QUES_12455_12469_M42879</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42887">QUES_12455_12469_M42880</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42887">QUES_12455_12469_M42881</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="QUES_12455_12469_C42887">QUES_12455_12469_M42882</varequal>
+            </conditionvar>
+            <setvar varname="D2L_Incorrect" action="Add">1</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="que_score" action="Set">D2L_Correct</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>
