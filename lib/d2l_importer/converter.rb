@@ -33,6 +33,7 @@ module D2lImporter
       set_progress(30)
       @course[:discussion_topics] = convert_discussions(@resources)
       set_progress(40)
+      @course[:assessment_questions] = convert_questions(@resources)
       @course[:assessments] = convert_quizzes(@resources)
       set_progress(50)
       @course[:modules] = reorganize_organization(@manifest)

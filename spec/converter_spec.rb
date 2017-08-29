@@ -42,6 +42,10 @@ describe D2lImporter::Converter do
       expect(subject.export[:wikis]).not_to be_empty
       expect(subject.export[:discussion_topics]).to be_an Array
       expect(subject.export[:discussion_topics]).not_to be_empty
+      expect(subject.export[:assessment_questions]).to be_a Hash
+      expect(subject.export[:assessment_questions][:assessment_questions]).to be_an Array
+      expect(subject.export[:assessment_questions][:assessment_questions].first).to be_a Hash
+      expect(subject.export[:assessment_questions]).not_to be_empty
       expect(subject.export[:assessments]).to be_a Hash
       expect(subject.export[:assessments][:assessments]).to be_an Array
       expect(subject.export[:assessments][:assessments].first).to be_a Hash

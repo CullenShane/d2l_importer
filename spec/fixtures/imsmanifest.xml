@@ -14,6 +14,7 @@
     </organization>
   </organizations>
   <resources>
+    <resource identifier="res_question_library" type="webcontent" d2l_2p0:material_type="d2lquestionlibrary" d2l_2p0:link_target="" href="questiondb.xml" title="Question Library"/>
     <resource identifier="RES_CONTENT_42" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title=""/>
     <resource identifier="RES_CONTENT_244" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Meet your teacher!.html" title=""/>
     <resource identifier="RES_CONTENT_8557" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=discuss&amp;rCode=019c73b0-e08e-4030-ae29-05956f973b1d" title="" />

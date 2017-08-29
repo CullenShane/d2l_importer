@@ -54,7 +54,13 @@ describe D2lImporter::Converter do
       expect(subject.course[:assessments][:assessments]).to be_an Array
       subject.course[:assessments][:assessments].each do |assessment|
         expect(assessment.keys).to include 'migration_id', 'title', 'questions'
+        # Assignment migration id causes problems because there's no assignments yet.
+        expect(assessment.keys).not_to include 'assignment_migration_id'
       end
+      expect(subject.course[:assessment_questions]).to be_a Hash
+      expect(subject.course[:assessment_questions][:assessment_questions]).to be_an Array
+      expect(subject.course[:assessment_questions][:assessment_questions].first).to be_a Hash
+      expect(subject.course[:assessment_questions]).not_to be_empty
     end
   end
 end
