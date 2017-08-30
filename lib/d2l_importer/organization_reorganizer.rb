@@ -67,6 +67,8 @@ module OrganizationReorganizer
     case matcher.match(href)[:type]
       when 'discuss'
         'discussion'
+      else
+        matcher.match(href)[:type]
     end
   end
 

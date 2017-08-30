@@ -16,10 +16,12 @@ module QuizConverter
     quiz = {}
     File.open(File.join(@unzipped_file_path, file_path)) do |file|
       questions, assessments = Qti.convert_xml(file.read, {flavor: Qti::Flavors::D2L})
+      file.rewind
+      quiz_xml = ::Nokogiri::HTML file
       quiz = assessments.first
       quiz[:questions] = [*quiz[:questions], *questions]
       quiz[:question_count] = quiz[:questions].length
-      quiz[:migration_id] = quiz[:title]
+      quiz[:migration_id] = quiz_xml.css('assessment').first['d2l_2p0:resource_code']
       quiz.delete(:assignment_migration_id)
     end
     quiz

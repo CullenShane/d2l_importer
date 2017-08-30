@@ -29,6 +29,7 @@ describe QuizConverter do
       expect{subject}.not_to raise_error
       expect(subject).to be_a Hash
       expect(subject.keys).to include :migration_id, :title
+      expect(subject[:migration_id]).to eq 'idealnmsupp-92981'
       # Assignment migration id causes problems because there's no assignments yet.
       expect(subject.keys).not_to include :assignment_migration_id
     end
