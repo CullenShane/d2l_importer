@@ -43,6 +43,10 @@ describe D2lImporter::Converter::OrganizationReorganizer do
       let(:href) { '' }
       it { is_expected.to eq nil }
     end
+    context 'quiz' do
+      let(:href) { '/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=quiz&amp;rCode=7c1d87c9-79a9-43ca-8fd5-85a17f8e22cb' }
+      it { is_expected.to eq 'quiz' }
+    end
   end
 
 end

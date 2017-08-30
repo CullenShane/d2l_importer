@@ -31,6 +31,8 @@ module OrganizationReorganizer
     return mod_item if res.nil?
     case res[:material_type]
       when 'contentmodule'
+        mod_item = {type: 'submodule', items: []}
+        add_child_items(item_node, mod_item)
       when 'content'
         mod_item = {
           type: 'linked_resource',
