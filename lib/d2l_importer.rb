@@ -12,6 +12,6 @@ module D2lImporter
   autoload :ResourceConsumer, 'd2l_importer/resource_consumer'
   autoload :OrganizationReorganizer, 'd2l_importer/organization_reorganizer'
   autoload :ConsumeFiles, 'd2l_importer/consume_files'
-  autoload :DiscussionConverter, 'd2l_importer/discussion_converter'
-  autoload :QuizConverter, 'd2l_importer/quiz_converter'
+  autoload :D2lDiscussionConverter, 'd2l_importer/d2l_discussion_converter'
+  autoload :D2lQuizConverter, 'd2l_importer/d2l_quiz_converter'
 end

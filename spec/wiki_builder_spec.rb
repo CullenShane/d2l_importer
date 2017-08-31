@@ -9,13 +9,13 @@ describe D2lImporter::Converter::WikiBuilder do
       manifest.remove_namespaces!
       converter.consume_resources(manifest)
     end
-    subject { converter.create_wikis(manifest) }
+    subject { converter.create_d2l_wikis(manifest) }
     it 'will return an array' do
       expect{subject}.not_to raise_error
       expect(subject).to be_a Array
       expect(subject).not_to be_empty
-      expect(subject.length).to be 1
-      expect(subject.first).to include :migration_id, :path_name, :file_name, :type, :text, :url_name, :title
+      expect(subject.length).to be == 2
+      expect(subject.first).to include :migration_id, :path_name, :file_name, :text, :url_name, :title
     end
   end
 

@@ -1,6 +1,6 @@
-module DiscussionConverter
+module D2lDiscussionConverter
 
-  def convert_discussions(resources)
+  def convert_d2l_discussions(resources)
     discussions = []
 
     resources_by(resources, 'd2ldiscussion', :material_type).each do |res|

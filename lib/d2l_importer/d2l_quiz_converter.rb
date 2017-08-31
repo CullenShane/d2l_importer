@@ -1,6 +1,6 @@
-module QuizConverter
+module D2lQuizConverter
 
-  def convert_quizzes(resources)
+  def convert_d2l_quizzes(resources)
     assessments = {}
     assessments[:assessments] = []
 
@@ -27,7 +27,7 @@ module QuizConverter
     quiz
   end
 
-  def convert_questions(resources)
+  def convert_d2l_questions(resources)
     assessment_questions = {}
     assessment_questions['assessment_questions'] = []
     resources_by(resources, 'd2lquestionlibrary', :material_type).each do |res|

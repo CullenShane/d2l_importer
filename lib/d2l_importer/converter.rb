@@ -8,8 +8,8 @@ module D2lImporter
     include OrganizationReorganizer
     include ConsumeFiles
     include WikiBuilder
-    include DiscussionConverter
-    include QuizConverter
+    include D2lDiscussionConverter
+    include D2lQuizConverter
 
 
     def initialize(settings)
@@ -29,12 +29,12 @@ module D2lImporter
       set_progress(10)
       consume_resources(@manifest)
       set_progress(20)
-      @course[:wikis] = create_wikis(@manifest)
+      @course[:wikis] = create_d2l_wikis(@manifest)
       set_progress(30)
-      @course[:discussion_topics] = convert_discussions(@resources)
+      @course[:discussion_topics] = convert_d2l_discussions(@resources)
       set_progress(40)
-      @course[:assessment_questions] = convert_questions(@resources)
-      @course[:assessments] = convert_quizzes(@resources)
+      @course[:assessment_questions] = convert_d2l_questions(@resources)
+      @course[:assessments] = convert_d2l_quizzes(@resources)
       set_progress(50)
       @course[:modules] = reorganize_organization(@manifest)
 

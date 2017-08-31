@@ -1,10 +1,10 @@
-describe QuizConverter do
+describe D2lQuizConverter do
   let(:converter) { D2lImporter::Converter.new( {archive_file: nil} ) }
 
   context '#convert_quizes' do
     let(:resources) { {'res_discuss_1' => {href: 'discussion_d2l_1.xml', material_type: 'd2ldiscussion', type: 'webcontent'},
                        'res_quiz_1' => {href: 'quiz_1.xml', material_type: 'd2lquiz', type: 'webcontent'}} }
-    subject { converter.convert_quizzes(resources) }
+    subject { converter.convert_d2l_quizzes(resources) }
     it 'should consume only quizzes' do
       expect(converter).to receive(:convert_this_quiz).with(resources['res_quiz_1'][:href]) {  }
       expect{subject}.not_to raise_error
@@ -14,7 +14,7 @@ describe QuizConverter do
 
   context '#convert_questions' do
     let(:resources) { { 'res_question_library' => {href: 'questiondb.xml', material_type: 'd2lquestionlibrary', type: 'webcontent'} }}
-    subject{ converter.convert_questions(resources) }
+    subject{ converter.convert_d2l_questions(resources) }
     it 'should consume questiondb.xml' do
       expect{subject}.not_to raise_error
       expect(subject.length).to eq 1
