@@ -39,13 +39,21 @@ describe D2lImporter::Converter::OrganizationReorganizer do
     let(:converter) { D2lImporter::Converter.new( {archive_file: nil} ) }
     subject { converter.get_d2l_type_from(href) }
     it { is_expected.to eq 'discussion' }
-    context 'bad href' do
+    context 'empty href' do
       let(:href) { '' }
+      it { is_expected.to eq nil }
+    end
+    context 'bad href' do
+      let(:href) { 'hvg://jgfgdsr64e357rufy' }
       it { is_expected.to eq nil }
     end
     context 'quiz' do
       let(:href) { '/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=quiz&amp;rCode=7c1d87c9-79a9-43ca-8fd5-85a17f8e22cb' }
       it { is_expected.to eq 'quiz' }
+    end
+    context 'external_link' do
+      let(:href) { 'http://www.shodor.org/interactivate/activities/FractionFour/' }
+      it { is_expected.to eq 'url' }
     end
   end
 

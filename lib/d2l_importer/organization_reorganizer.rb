@@ -44,13 +44,24 @@ module OrganizationReorganizer
       when 'contentlink'
         # This needs to parse the special href that's there and get the wacky hash ID out, it also needs
         # to setup the linked_resource_type to be correct for the D2l type
-        mod_item = {
-          type: 'linked_resource',
-          item_migration_id: item_node['identifier'],
-          linked_resource_id: get_d2l_code_from(res[:href]),
-          linked_resource_title: get_node_val(item_node, 'title'),
-          linked_resource_type: get_d2l_type_from(res[:href])
-        }
+        if get_d2l_type_from(res[:href]) == 'url'
+          mod_item = {
+            type: 'linked_resource',
+            item_migration_id: item_node['identifier'],
+            url: res[:href],
+            workflow_state: 'published',
+            linked_resource_title: get_node_val(item_node, 'title'),
+            linked_resource_type: get_d2l_type_from(res[:href])
+          }
+        else
+          mod_item = {
+            type: 'linked_resource',
+            item_migration_id: item_node['identifier'],
+            linked_resource_id: get_d2l_code_from(res[:href]),
+            linked_resource_title: get_node_val(item_node, 'title'),
+            linked_resource_type: get_d2l_type_from(res[:href])
+          }
+        end
 
     end
     mod_item
@@ -65,7 +76,17 @@ module OrganizationReorganizer
 
   def get_d2l_type_from(href)
     matcher = /type=(?<type>[a-z]+)/
-    return unless matcher.match?(href)
+    if not matcher.match?(href)
+      begin
+        uri = URI.parse(href)
+        if ['http', 'https'].include? uri.scheme
+          return 'url'
+        end
+      rescue URI::InvalidURIError
+        return nil
+      end
+    end
+    return if matcher.match(href).nil?
     case matcher.match(href)[:type]
       when 'discuss'
         'discussion'
