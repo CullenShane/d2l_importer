@@ -5,7 +5,6 @@ module D2lDiscussionConverter
 
     resources_by(resources, 'd2ldiscussion', :material_type).each do |res|
       discussions << self.discuss_this(res[:href])
-
     end
 
     discussions

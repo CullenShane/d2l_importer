@@ -24,5 +24,6 @@
     <resource identifier="res_discuss_1" type="webcontent" d2l_2p0:material_type="d2ldiscussion" d2l_2p0:link_target="" href="discussion_d2l_1.xml" title=""/>
     <resource identifier="res_quiz_831" type="webcontent" d2l_2p0:material_type="d2lquiz" d2l_2p0:link_target="" href="quiz_d2l_1.xml" title="5.6 A1 Multiplying Exponential Expressions"/>
     <resource identifier="RES_CONTENT_8746" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="http://www.shodor.org/interactivate/activities/FractionFour/" title="" />
+    <resource identifier="res_dropbox" type="webcontent" d2l_2p0:material_type="d2ldropbox" d2l_2p0:link_target="" href="dropbox_d2l.xml" title="" />
   </resources>
 </manifest>

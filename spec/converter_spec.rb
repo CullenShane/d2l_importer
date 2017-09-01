@@ -51,6 +51,9 @@ describe D2lImporter::Converter do
       expect(subject.export[:assessments][:assessments]).to be_an Array
       expect(subject.export[:assessments][:assessments].first).to be_a Hash
       expect(subject.export[:assessments]).not_to be_empty
+      expect(subject.export[:assignments]).to be_an Array
+      expect(subject.export[:assignments].first).to be_a Hash
+      expect(subject.export[:assignments].count).to be == 17
     end
   end
 end

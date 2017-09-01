@@ -10,6 +10,7 @@ module D2lImporter
     include WikiBuilder
     include D2lDiscussionConverter
     include D2lQuizConverter
+    include DropboxAssignmentConverter
 
 
     def initialize(settings)
@@ -36,6 +37,8 @@ module D2lImporter
       @course[:assessment_questions] = convert_d2l_questions(@resources)
       @course[:assessments] = convert_d2l_quizzes(@resources)
       set_progress(50)
+      @course[:assignments] = convert_dropboxes(@resources)
+      set_progress(60)
       @course[:modules] = reorganize_organization(@manifest)
 
       save_to_file

@@ -14,4 +14,5 @@ module D2lImporter
   autoload :ConsumeFiles, 'd2l_importer/consume_files'
   autoload :D2lDiscussionConverter, 'd2l_importer/d2l_discussion_converter'
   autoload :D2lQuizConverter, 'd2l_importer/d2l_quiz_converter'
+  autoload :DropboxAssignmentConverter, 'd2l_importer/dropbox_assignment_coverter'
 end

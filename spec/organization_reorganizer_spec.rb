@@ -55,6 +55,14 @@ describe D2lImporter::Converter::OrganizationReorganizer do
       let(:href) { 'http://www.shodor.org/interactivate/activities/FractionFour/' }
       it { is_expected.to eq 'url' }
     end
+    context 'external_link with html' do
+      let(:href) { 'http://www.math.com/school/glossary/glossindex.html' }
+      it { is_expected.to eq 'url' }
+    end
+    context 'dropbox' do
+      let(:href) { '/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=d7d94933-71e3-4cf4-ac91-d0f24562af76'}
+      it { is_expected.to eq 'assignment' }
+    end
   end
 
 end
