@@ -21,6 +21,7 @@
     <resource identifier="RES_CONTENT_42" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title=""/>
     <resource identifier="RES_CONTENT_244" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Meet your teacher!.html" title=""/>
     <resource identifier="RES_CONTENT_8557" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=discuss&amp;rCode=019c73b0-e08e-4030-ae29-05956f973b1d" title="" />
+    <resource identifier="RES_CONTENT_8651" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="http://www.math.com/school/glossary/glossindex.html" title="" />
     <resource identifier="res_discuss_1" type="webcontent" d2l_2p0:material_type="d2ldiscussion" d2l_2p0:link_target="" href="discussion_d2l_1.xml" title=""/>
     <resource identifier="res_quiz_831" type="webcontent" d2l_2p0:material_type="d2lquiz" d2l_2p0:link_target="" href="quiz_d2l_1.xml" title="5.6 A1 Multiplying Exponential Expressions"/>
     <resource identifier="RES_CONTENT_8746" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="http://www.shodor.org/interactivate/activities/FractionFour/" title="" />

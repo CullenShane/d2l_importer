@@ -3,7 +3,7 @@ module WikiBuilder
   def create_d2l_wikis(manifest)
     wikis = []
 
-    manifest.css("resource[type=webcontent][href$='.html']").each do |res|
+    manifest.css("resource[type=webcontent][href$='.html'][href]:not([href^='http'])").each do |res|
       wiki = {}
       wiki[:migration_id] = res['identifier']
       wiki[:path_name] = res['href']
