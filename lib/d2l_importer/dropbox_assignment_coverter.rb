@@ -13,7 +13,9 @@ module DropboxAssignmentConverter
   def drop_this_box(href)
     assignments = []
 
-    file = open_file(File.join(@unzipped_file_path, href))
+    dropbox_file_path = File.join(@unzipped_file_path, href)
+    @ignored_files << dropbox_file_path
+    file = open_file(dropbox_file_path)
     file.css('dropbox folder').each do |folder|
       assignment = {}
       assignment[:instructions_in_html] = true

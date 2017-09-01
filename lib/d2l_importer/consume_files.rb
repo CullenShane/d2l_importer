@@ -1,20 +1,19 @@
 module ConsumeFiles
 
-  def create_file_map(resources)
+  def create_d2l_file_map
     file_map = {}
 
-    # This should capture all files that AREN'T D2L files or otherwise and store them so they can be
-    # accessed by the wiki pages as content
+    files = Dir["#{@unzipped_file_path}/**/*"]
+    files -= @ignored_files
+    files.each do |file|
+      file.gsub!("#{@unzipped_file_path}/", '')
+      file_hash = {}
+      file_hash[:migration_id] = file
+      file_hash[:path_name] = file
+      file_hash[:file_name] = File.basename(file)
+      file_hash[:type] = 'FILE_TYPE'
 
-    # resources.css("resource[type=webcontent][href$='.html'][material_type='content']").each do |res|
-    resources_by(resources, :material_type, 'content', 'webcontent').each do |res|
-      file = {}
-      # file[:migration_id] = res['identifier']
-      # file[:path_name] = res['href']
-      # file[:file_name] = File.basename file[:path_name]
-      # file[:type] = 'FILE_TYPE'
-      #
-      # file_map[file[:migration_id]] = file
+      file_map[file_hash[:migration_id]] = file_hash
     end
 
     file_map

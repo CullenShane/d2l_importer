@@ -54,6 +54,8 @@ describe D2lImporter::Converter do
       expect(subject.export[:assignments]).to be_an Array
       expect(subject.export[:assignments].first).to be_a Hash
       expect(subject.export[:assignments].count).to be == 17
+      expect(subject.export[:file_map]).to be_a Hash
+      expect(subject.export[:all_files_zip]).to be_a String
     end
   end
 end

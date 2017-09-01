@@ -17,6 +17,7 @@ module D2lImporter
       super(settings, 'd2l')
       @course = @course.with_indifferent_access
       @resources = {}
+      @ignored_files = []
     end
 
     MANIFEST_FILE = 'imsmanifest.xml'
@@ -25,7 +26,9 @@ module D2lImporter
       unzip_archive
       set_progress(5)
 
-      @manifest = open_file(File.join(@unzipped_file_path, MANIFEST_FILE))
+      manifest_file_path = File.join(@unzipped_file_path, MANIFEST_FILE)
+      @manifest = open_file(manifest_file_path)
+      @ignored_files << manifest_file_path
       @manifest.remove_namespaces!
       set_progress(10)
       consume_resources(@manifest)
@@ -39,8 +42,10 @@ module D2lImporter
       set_progress(50)
       @course[:assignments] = convert_dropboxes(@resources)
       set_progress(60)
+      @course[:file_map] = create_d2l_file_map
+      @course[:all_files_zip] = package_course_files(@course)
+      set_progress(70)
       @course[:modules] = reorganize_organization(@manifest)
-
       save_to_file
       delete_unzipped_archive
       @course

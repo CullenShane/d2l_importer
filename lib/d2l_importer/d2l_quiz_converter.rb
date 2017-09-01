@@ -14,7 +14,9 @@ module D2lQuizConverter
 
   def convert_this_quiz(file_path)
     quiz = {}
-    File.open(File.join(@unzipped_file_path, file_path)) do |file|
+    quiz_file_path = File.join(@unzipped_file_path, file_path)
+    @ignored_files << quiz_file_path
+    File.open(quiz_file_path) do |file|
       questions, assessments = Qti.convert_xml(file.read, {flavor: Qti::Flavors::D2L})
       file.rewind
       quiz_xml = ::Nokogiri::HTML file
@@ -31,7 +33,9 @@ module D2lQuizConverter
     assessment_questions = {}
     assessment_questions['assessment_questions'] = []
     resources_by(resources, 'd2lquestionlibrary', :material_type).each do |res|
-      File.open(File.join(@unzipped_file_path, res[:href])) do |file|
+      question_library_path = File.join(@unzipped_file_path, res[:href])
+      @ignored_files << question_library_path
+      File.open(question_library_path) do |file|
         questions, assessments = Qti.convert_xml(file.read, {flavor: Qti::Flavors::D2L})
         assessment_questions['assessment_questions'] =
           [*assessment_questions['assessment_questions'], *questions]

@@ -13,7 +13,9 @@ module D2lDiscussionConverter
   def discuss_this(discussion_path)
     discussion = {}
 
-    file = open_file(File.join(@unzipped_file_path, discussion_path))
+    discussion_path = File.join(@unzipped_file_path, discussion_path)
+    file = open_file(discussion_path)
+    @ignored_files << discussion_path
     file.css('discussion forum').each do |forum|
       discussion[:migration_id] = forum['resource_code']
       discussion[:migration_id] ||= forum['id']
