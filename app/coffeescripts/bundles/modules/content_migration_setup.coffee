@@ -5,6 +5,7 @@ define [
   'compiled/views/content_migrations/subviews/SelectContentCheckboxView'
   'compiled/views/content_migrations/subviews/QuestionBankView'
   'compiled/plugins/d2l_importer/views/content_migrations/D2lZipView'
+  'compiled/bundles/modules/content_migration_setup'
 ], ($,
   ConverterViewControl,
   ChooseMigrationFileView,

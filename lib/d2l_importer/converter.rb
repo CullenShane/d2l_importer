@@ -25,6 +25,7 @@ module D2lImporter
     def export(to_export = SCRAPE_ALL_HASH)
       unzip_archive
       set_progress(5)
+      set_unzipped_file_path
 
       manifest_file_path = File.join(@unzipped_file_path, MANIFEST_FILE)
       @manifest = open_file(manifest_file_path)
@@ -61,6 +62,10 @@ module D2lImporter
           res[t].start_with?(key)
         }
       }
+    end
+
+    def set_unzipped_file_path
+      @unzipped_file_path = @archive.unzipped_file_path
     end
   end
 end
